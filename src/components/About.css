@@ -1,0 +1,316 @@
+.about-container {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section */
+  .about-hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3)), 
+                url('https://images.unsplash.com/photo-1517502884422-41eaead166d4') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content {
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .hero-title {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+  }
+  
+  .hero-title span {
+    font-weight: 700;
+    color: #d4af37;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+  }
+  
+  .scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    cursor: pointer;
+  }
+  
+  .scroll-indicator span {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  }
+  
+  /* Mission Section */
+  .mission-section {
+    padding: 8rem 10%;
+    background-color: #f9f9f9;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+  }
+  
+  .mission-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .mission-text {
+    flex: 1;
+    padding-right: 4rem;
+  }
+  
+  .mission-text h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+  
+  .mission-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .mission-stats {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-item h3 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-item p {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding: 8rem 10%;
+    background-color: white;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+  }
+  
+  .team-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .team-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    color: #222;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .team-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card-image {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card-content {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  .card-content .role {
+    color: #d4af37;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .card-content .bio {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  /* Values Section */
+  .values-section {
+    padding: 8rem 10%;
+    background-color: #f0f0f0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+  }
+  
+  .values-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .values-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    color: #222;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .value-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .value-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #d4af37;
+  }
+  
+  .value-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .value-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    padding: 6rem 10%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1517502884422-41eaead166d4') center/cover;
+    color: white;
+    text-align: center;
+  }
+  
+  .cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: white;
+    color: #222;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 3.5rem;
+    }
+    
+    .mission-content {
+      flex-direction: column;
+    }
+    
+    .mission-text {
+      padding-right: 0;
+      margin-bottom: 3rem;
+    }
+    
+    .mission-stats {
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
